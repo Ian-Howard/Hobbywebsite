@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css2?family=Carlito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Capstone.css">
+</head>
+
+<body>
+    <nav class = "navbar">
+        <a href="Index.html">Home</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="Contact.html" class="active">Contact Details</a>
+        <a href="SaveForLater.html">Blog/Content</a>
+        <a href="SavedItems.html">Saved Items</a>
+    </nav>
+    <section>
+        <h2>Subscribe to our newsletter</h2>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            </header>
+            <button class = "cta">Subscribe</button>            
+    </section>
+    
+    <section>  
+        <h2>Become a member.</h2>         
+        <form class="membership-form">
+            <label for="type1">"I'm just a weekend Warrior"</label> 
+            <input type="radio" id="type1" name="recipe_type" value="1">
+            <label for="type2">"I'm all in"</label>
+            <input type="radio" id="type2" name="recipe_type" value="2">
+        </form>
+        <button class = "cta" type = "submit">Apply</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Details</h2>
+        <table>
+             <tr>
+                <td>Email:</td>
+                <td><a href="mailto:john@example.com">john@example.com</a></td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td>+1 (123) 456-7890</td>
+            </tr>
+        </table>
+        
+        <h2>Send us a message</h2>        
+        <form>
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="email">Your email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="message">Your message:</label>
+            <textarea id="message" name="message" required></textarea>
+          
+            <button class = "cta" type="submit">Submit</button>
+        </form> 
+    </section>  
+
+    <section>
+        <p>
+        <a href="https://fightclubfan.tripod.com/">Our companion website</a>
+        </p>
+    </section>
+    <script src = "main.js"></script>
+</body>
+</html>

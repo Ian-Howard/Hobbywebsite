@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Save for later</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css2?family=Carlito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Capstone.css">
+</head>
+
+<body>
+<nav class = "navbar">
+    <a href="Index.html">Home</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="Contact.html">Contact Details</a>
+    <a href="SaveForLater.html" class="active">Blog/Content</a>
+    <a href="SavedItems.html">Saved Items</a>
+</nav>
+
+<section>
+    <h1>Blog/Content</h1>
+    <div class="accordion">
+        <h3>Pretend there's a witty blog post title here</h3>
+        <div>
+            <p>Let's all live under the illusion that there's a funny post about hobbies here...</p>
+            <button class = "cta" onclick="saveForLater('Section 1')">Save for Later</button>
+            <button class = "cta" onclick="likeItem('Item 1')">Like Item</button>
+        </div>
+        <h3>Same here</h3>
+        <div>
+            <p>Pretend there's one here too..</p>
+            <button class = "cta" onclick="saveForLater('Section 2')">Save for Later</button>
+            <button class = "cta" onclick="likeItem('Item 1')">Like Item</button>
+        </div>
+    </div>
+    
+    <div>
+        <form>
+            <label for="comment">Leave a comment:</label>
+            <textarea id="comment" name="comment"></textarea>
+            <button class = "cta" type="submit">Submit</button>
+        </form>
+    </div>
+
+</section>
+
+<script src = "main.js"></script>
+</body>
+
+</html>
