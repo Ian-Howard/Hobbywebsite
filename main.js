@@ -43,15 +43,15 @@ window.likeItem = function(item) {
 
     // Chained animation
     $("#animate-rules").click(function() {
-      var colors = ["red", "green", "blue", "orange", "purple"];
+      var newColours = ["red", "green", "blue", "orange", "purple"]; // Var colours renamed to newColours //
       var fontSizes = ["1.2rem", "1.4rem", "1.6rem", "1.8rem", "2rem"];
 
       $(".rules-list ol li").each(function(index, element) {
           var $element = $(element);
           function animateRule(i) {
-              if (i >= colors.length) return;
+              if (i >= newColours.length) return;
               $element.animate({
-                  "color": colors[i],
+                  "color": newColours[i],
                   "font-size": fontSizes[i]
               }, 1000, function() {
                   animateRule(i + 1);
